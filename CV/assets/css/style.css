@@ -1,0 +1,113 @@
+body{
+    margin:0;
+    font-family:  "Arial";
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Header*/
+.main-header{
+    background: #3c3c3c;
+    float:left;
+    clear: both;
+    width: 100%;
+    padding-top: 35px;
+    /*border-bottom: 3px solid #C40E0E;*/
+    margin-bottom: 30px
+}
+
+.main-header .container-img{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-header .main-title{
+     font-size: 45px;
+     color:  #F5EFEF;
+     text-align: center;
+     margin: 10px 0 20px;
+     text-transform: uppercase;
+}
+
+.main-header .container-img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+}
+
+/*header menu*/
+.menu{
+    background-color: #721C1C;
+    width: 100%;
+    float: left;
+    padding: 12px;
+}
+.menu .container-item{
+    padding: 0 50px;
+    list-style: none;
+}
+
+.menu .container-item .item{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.menu .container-item .item a{
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.menu .container-item .item a:hover{
+    background: white;
+    color: black;
+}
+
+/*Sections*/
+
+section{
+    float: left;
+    width: 100%;
+    padding: 10px 165px;
+}
+
+section h3{
+    font-size: 25px;
+    background: #464141;
+    color: white;
+    float: left;
+    clear: both;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+section p, section address, section ul{
+    float: left;
+    width: 100%;
+}
+
+section p, section address{
+    font-size: 14px;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+section address{  
+    font-style: normal;  
+}
+
+section .ul-list{
+    padding-left: 20px;
+}
+section .ul-list li{
+    
+}
+
+
