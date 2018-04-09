@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="authot" content="Renan Massmann">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <figure>
+        <img src="assets/img/01.jpg" title="Steve Jobs" alt="imagem" width="200" height="200" border="3px">
+    </figure>
+    <header>
+        <h1>Renan Massmann</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="curriculum.html">Curriculum Vitae</a>
+                </li>
+                <li>
+                    <a href="fale-conosco.html">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="https://github.com/rmassmann" target="_blank">Meus Projetos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Fale Conosco</h2>
+        <form action="" method="get">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="sex">Sexo:</label>
+                <input type="radio"  value="1" id="sex" required>Masculino
+                <input type="radio"  value="2" id="sex" required>Feminino
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" required pattern="^[0-9]*$" oninvalid="this.setCustomValidity('Somente Numeros')">
+            </div>
+            <div>
+                <label for="city">Cidade: </label>
+                <input type="text" id="city" required>
+            </div>
+            <div>
+                <label for="state">Estado</label>
+                <select name="state" id="state" required>
+                    <option value="RS">RS</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+            <div>
+                <label for="subject">Assunto: </label>
+                <select name="subject" id="subject" required>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="critica">Crítica</option>
+                </select>
+            </div>
+            <div>
+                <label for="file">Arquivo: </label>
+                    
+                <input id="file" type="file">
+            </div>
+            <div>
+                <label for="message">Mensagem: </label>
+                <textarea id="message" cols="30" rows="5" placeholder="teste" maxlength="140"></textarea>
+            </div>
+            <div>
+                <label for="website">Website: </label>
+                <input type="ulr" id="website">
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </section>
+</body>
+
+</html>
