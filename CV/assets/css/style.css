@@ -73,7 +73,8 @@ body{
 section{
     float: left;
     width: 100%;
-    padding: 10px 165px;
+    padding: 10px 12.5%;
+
 }
 
 section h3{
@@ -101,6 +102,7 @@ section p, section address{
 
 section address{  
     font-style: normal;  
+    padding-left: 0px;
 }
 
 section .ul-list{
@@ -110,4 +112,100 @@ section .ul-list li{
     
 }
 
+/*Form*/
+
+.main-form{
+    display:block;
+    width: 500px;
+    margin: 0 auto;
+}
+.main-form .title{
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+
+.main-form .container-text{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#hr{
+    border: 1.5px solid #534F4F;
+    margin: 13px 0;
+}
+.main-form .container-text label{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.main-form .container-text input:not([type=radio]):not([type=file]){
+    float: left;
+    width: 100%;
+    border: 2px solid #534F4F;
+    padding: 8px;
+}
+
+.main-form .container-text.radio{
+    float: left;
+    width: 100%;
+    margin-right:0 10px 0 0;
+    font-size: 18px;
+    clear: none;
+}
+.main-form .container-text.radio input{
+    margin-right: 5px;
+}
+    
+.main-form .container-text select{
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #534F4F;  
+}
+
+.main-form .container-text textarea{
+    resize: none;
+    width: 100%;
+    border: 2px solid #534F4F;  
+    font: 400 13.3333px Arial;
+}
+
+.main-form button{
+    
+    width: 48%;
+    padding: 15px;
+    border: 3px solid #534F4F;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-form .btn-submit{
+    float: left;
+    background: #534F4F;
+    color: white;
+   
+}
+.main-form .btn-reset{
+    float: right;
+    background: white;
+    color: #534F4F;
+    
+
+/*footer*/
+
+.main-footer{
+    float: left;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    background: #534F4F;
+    margin-top: 40px;
+}
 

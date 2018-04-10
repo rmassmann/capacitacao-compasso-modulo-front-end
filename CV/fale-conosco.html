@@ -11,50 +11,52 @@
 </head>
 
 <body>
-    <figure>
-        <img src="assets/img/01.jpg" title="Steve Jobs" alt="imagem" width="200" height="200" border="3px">
-    </figure>
-    <header>
-        <h1>Renan Massmann</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="curriculum.html">Curriculum Vitae</a>
+    <header class="main-header">
+        <figure class=container-img>
+                <img class="container-img" src="assets/img/01.jpg" title="Steve Jobs" alt="imagem" >
+        </figure>
+        <h1 class="main-title">Renan Jobs</h1>
+        <nav class="menu">
+            <ul class="container-item">
+                <li class="item">
+                    <a href="curriculo.html">Curriculum Vitae</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="fale-conosco.html">Fale Conosco</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="https://github.com/rmassmann" target="_blank">Meus Projetos</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Fale Conosco</h2>
-        <form action="" method="get">
-            <div>
+
+    <section>       
+        <form action="" method="get" class="main-form">
+                <h2 class="">Fale Conosco</h2>
+                <hr id="hr">
+            <div class="container-text">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" required>
             </div>
-            <div>
+            <div class="container-text radio">
                 <label for="sex">Sexo:</label>
-                <input type="radio"  value="1" id="sex" required>Masculino
-                <input type="radio"  value="2" id="sex" required>Feminino
-            </div>
-            <div>
+                <input type="radio"  value="1" id="sex_m" required>Masculino
+                <input type="radio"  value="2" id="sex_f" required>Feminino
+            </div class="container-text">
+            <div class="container-text">
                 <label for="email">Email:</label>
                 <input type="email" id="email" required>
             </div>
-            <div>
+            <div class="container-text">
                 <label for="phone">Telefone:</label>
                 <input type="tel" id="phone" required pattern="^[0-9]*$" oninvalid="this.setCustomValidity('Somente Numeros')">
             </div>
-            <div>
+            <div class="container-text">
                 <label for="city">Cidade: </label>
                 <input type="text" id="city" required>
             </div>
-            <div>
+            <div class="container-text">
                 <label for="state">Estado</label>
                 <select name="state" id="state" required>
                     <option value="RS">RS</option>
@@ -63,30 +65,31 @@
                     <option value="SP">São Paulo</option>
                 </select>
             </div>
-            <div>
+            <div class="container-text">
                 <label for="subject">Assunto: </label>
                 <select name="subject" id="subject" required>
                     <option value="sugestao">Sugestão</option>
                     <option value="critica">Crítica</option>
                 </select>
             </div>
-            <div>
+            <div class="container-text">
                 <label for="file">Arquivo: </label>
                     
                 <input id="file" type="file">
             </div>
-            <div>
+            <div class="container-text">
                 <label for="message">Mensagem: </label>
                 <textarea id="message" cols="30" rows="5" placeholder="teste" maxlength="140"></textarea>
             </div>
-            <div>
+            <div class="container-text">
                 <label class=""for="website">Website: </label>
                 <input type="ulr" id="website">
             </div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Cancelar</button>
+            <button class="btn-submit" type="submit">Enviar</button>
+            <button class="btn-reset" type="reset">Cancelar</button>
         </form>
     </section>
+    <footer class="main-footer">Todos os direitos reservados.</footer>
 </body>
 
 </html>
