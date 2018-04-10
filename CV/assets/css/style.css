@@ -195,7 +195,8 @@ section .ul-list li{
     float: right;
     background: white;
     color: #534F4F;
-    
+    margin-right: 25px;
+}
 
 /*footer*/
 
