@@ -1,0 +1,195 @@
+body{
+    margin:0;
+    font-family:  "Arial";
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Header*/
+.main-header{
+    background:  silver;
+    float:left;
+    clear: both;
+    width: 100%;
+    padding-top: 0px;
+    /*border-bottom: 3px solid #C40E0E;*/
+    margin-bottom: 30px;
+   
+}
+.main-header .container-main{
+    clear: both;
+    padding-right: 10%;
+}
+
+.main-header .div-first{
+    width: 40%;  
+    float: left; 
+    position: relative;
+}
+
+.main-header .div-second{
+    width:60% ;
+    float: left; 
+    
+}
+
+.main-header .div-first .container-img{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-right: 20%;
+    padding-bottom:25px; 
+    height: 100px;
+
+}
+ .div-second .menu-first{
+    padding-top: 0px;
+    background-color: black;
+    width: 250px;
+    height: 35px;
+    float: right;
+
+    
+}
+.menu-first .container-item .item{
+    float: left;
+   padding-top: 6px;
+    text-align: center;
+    list-style: none;
+
+}
+
+.menu-first .container-item .item a{
+    color: #F8F1F1;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.menu .container-item .item a:hover{
+    background: white;
+    color: black;
+}
+#login{
+    margin-left: 20px;
+}
+
+.div-second .search-first{
+    padding-top: 40px;
+    height: 50px;
+    width: 100%;  
+    float: left;
+}
+.div-second .search-first a{
+    
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 2px;
+ 
+} 
+.div-second .search-first input{
+   width: 100%;
+   height: 40px;
+   /*padding-right: 20%;*/
+   border-radius: 1.2px
+}
+
+
+/*header menu*/
+.menu{
+    clear: both;
+    background-color: black;
+    width: 100%;
+    float: left;
+    padding: 12px;
+}
+.menu .container-item{
+    padding: 0 50px;
+    list-style: none;
+}
+
+.menu .container-item .item{
+    float: left;
+    width: calc(100% / 9);
+    text-align: center;
+}
+
+.menu .container-item .item a{
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.menu .container-item .item a:hover{
+    background: white;
+    color: black;
+}
+
+.container-body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-body .section-first{
+    width: 100%;
+    float: left;
+}
+.container-body .section-first .container-img{
+    height: 300px;
+    width: 580px;
+    float: left;
+}
+.container-body .section-first{
+    clear: both;
+    width: 100%;
+    float: left;
+}
+.container-body .section-first h3{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.container-body .section-second{
+    padding-top: 10px;
+    clear: both;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.container-body .section-third{
+    padding-top: 20px;
+    clear: both;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.container-body .section-second h3{
+    
+    text-align: left;
+    font-size: 25px
+}
+.container-body .section-third h3{
+   
+    text-align: left;
+    font-size: 25px
+}
+.container-body .section-second .second-produtos{
+    float: left;
+    width: calc(100% / 3);
+    padding-top: 10px;
+}
+
+.container-body .section-third .second-produtos{
+    float: left;
+    width: calc(100% / 3);
+    padding-top: 10px;
+}
+.section-third .second-produtos .product-detail-label{
+     display: block;
+     
+    
+}
