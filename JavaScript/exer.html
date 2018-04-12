@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">numero 1</label><br>
+    <input type="text" id="first"><br>
+    
+    <label for="">Numero 2</label><br>
+     <input type="text" id="second"><br>
+    <label for=":">Resultado</label><br>
+    <input type="text" id="result"><br>
+
+    <a href="" id="somar">Somar</a>
+     <script>
+        var number1 = document.getElementById("first");
+        var number2 = document.getElementById("second");
+        var result = document.getElementById("result");
+
+        document.getElementById("somar").onclick = function(){
+          var res = parseInt(number1.value) + parseInt(number2.value);
+          result.value = res;
+          return false;
+        }
+
+     </script>
+</body>
+</html>

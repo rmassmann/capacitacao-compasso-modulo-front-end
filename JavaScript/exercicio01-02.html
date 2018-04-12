@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="qualquercoisa">
+    <a href="http://www.google.com" onclick="return confirm('Deseja Redirecionar?')">google.com</a>
+
+    <a href="thhp://www.compasso.com.br" id="linkcompasso">
+        Compasso.com.br
+    </a>
+
+
+
+
+    <script>
+        var link_compasso = document.getElementById("linkcompasso");
+        var input = document.getElementById("qualquercoisa");
+           
+        console.log(link_compasso);
+        //link_compasso.innerHTML = "Testando o javascript";
+        link_compasso.onclick = function(){
+           console.log(link_compasso.innerHTML);
+        // ou this.inner.HTML
+        input.value = "asfdasdf";
+          
+        }
+
+        input.onfocus = function(){
+            this.value = "teste"
+        }; 
+        input.onblur = function(){
+            this.value = ""
+        }; 
+    </script>
+
+</body>
+</html>
