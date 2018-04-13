@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container-resultado{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" id="frm-busca">
+        <input type="search" id="campo-busca" >         
+    </form>
+
+    <div id="container-resultado">
+        <h2>Resultado de busca</h2>
+        <div id="sugestoes-produtos"></div>
+        <div id="resultado-busca"></div>
+    </div>
+
+    <script>
+        "use strict"; // Obriga a inicializar todas as variaveis
+       
+       var debug = true;
+
+       function cl(msg){
+           if(debug) console.log(msg);
+       }
+       
+        var $campo_busca = document.getElementById("campo-busca");
+        var $container_resultado = document.getElementById("container-resultado");
+        var $sugestoes_produtos = document.getElementById("sugestoes-produtos");
+        var $resultado_busca = document.getElementById("resultado-busca");
+        var $ar_sugestoes_produtos = ["Detergente", "Café", "Erva", "cerveja"];
+
+        function renderizaSugestoes(){
+            var $i = 0, $retorno = "";
+            while($i < $ar_sugestoes_produtos.length){
+               $retorno += "<p>" + $ar_sugestoes_produtos[$i] + "</p>"; 
+                $i++;            
+            }
+          
+           $sugestoes_produtos.innerHTML = $retorno;
+        }
+
+        function renderizaResultadoBusca(){
+            var $retorno = "";
+
+            for(var $i in $ar_resultado_busca){
+                $retorno += "<div>" + 
+                "<h3>" + $ar_resultado_busca[$i].nome +"</h3>"+
+                "<p>" + $ar_resultado_busca[$i].descricao + "</p>" +
+                "<p>" + $ar_resultado_busca[$i].preco + "</p>"+
+                "<p>" + $ar_resultado_busca[$i].img + "</p>"+
+                "<a href='"+ $ar_resultado_busca[$i].link +"'>Veja mais</a>"+
+                "</div>";
+            }
+            $resultado_busca.innerHTML = $retorno;
+        };
+
+        var $ar_resultado_busca =[{
+            "nome": "computador Asus",
+            "descricao": "i5 sei la",
+            "img": null,
+            "link": "http://www.compasso.com.br",
+            "preco": "200.0"
+            },
+            {
+            "nome": "Notebook Hp",
+            "descricao": "i5 sei la",
+            "img": null,
+            "link": "http://www.compasso.com.br",
+            "preco": "200.0"
+            },
+            {
+            "nome": "computador CCE",
+            "descricao": "i5 sei la",
+            "img": null,
+            "link": "http://www.compasso.com.br",
+            "preco": "200.0"
+            }
+        ];
+        cl($ar_resultado_busca);
+        
+        renderizaSugestoes();
+
+        $campo_busca.onfocus = function(){           
+            $container_resultado.style.display = "block";
+
+            if(this.value.length === 0){
+                $resultado_busca.style.display = "none";
+                $sugestoes_produtos.style.display = "block";
+                renderizaSugestoes(); 
+            }else{              
+                $sugestoes_produtos.style.display = "none";
+                $resultado_busca.style.display = "block";
+               
+            }
+        }
+       
+
+        $campo_busca.onblur = function(){            
+            $container_resultado.style.display = "none";
+        }
+
+        renderizaSugestoes();
+        renderizaResultadoBusca();
+    </script>
+   
+</body>
+</html>
