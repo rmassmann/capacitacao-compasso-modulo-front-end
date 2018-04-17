@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .hide{
+                display:none;
+            }
+          
+        </style>
+      
+</head>
+<body>
+    <form action="" id="frm-cadastrar">
+        <label for="" >Cep</label><br>
+        <input type="text" id="txt-cep" autofocus maxlength="9"><br><br>
+        <span id="pes" class="hide">Processando</span>
+        <label for="">Logradouro</label><br>
+        <input type="text" disabled id="txt-log"><br>
+        <label for="" >Bairro</label><br>
+        <input type="text" disabled  id="txt-bai"><br>
+        <label for="" >Localidade</label><br>
+        <input type="text" disabled  id="txt-loc"><br>
+        <label for="" >UF</label><br>
+        <input type="text" disabled  id="txt-uf"><br><br>
+
+        <button id="btn-cadastrar" type="submit">Cadastrar</button>
+
+
+    </form>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+   
+</body>
+</html>
