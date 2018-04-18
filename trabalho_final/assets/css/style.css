@@ -1,0 +1,345 @@
+/* CONFIG. GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hide{
+    display:none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* HEADER */
+.main-header{
+    background-color: #00838F;
+    height: 250px;
+}
+
+.main-header .main-logo{
+    background-color: #ffffff;
+    color: #000000;
+    float: left;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    width: 130px;
+}
+
+.main-header .main-logo img{
+    width: 100%;
+}
+
+.main-header .main-account{
+    float: right;
+}
+
+.main-header .main-account a{
+    background-color: #FFC107;
+    color: #000000;
+    float: left;
+    padding: 10px 30px 10px 30px;
+}
+
+.main-header .main-account a:hover{
+    background-color: #ffffff;
+    color: #00838F;
+}
+
+.main-header .main-search{
+    float: right;
+    position: absolute;
+    top: 115px;
+    width: 700px;
+    right: 0;
+}
+.main-header .main-sugestoes{
+    float: right;
+    position: absolute;
+    top: 165px;
+    width: 670px;
+    right: 0;
+    height:200px;
+    z-index: 1;
+    background-color: white;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.main-header .main-search form{
+    width: 100%;    
+}
+
+.main-header .main-search  input{
+    width: 100%;
+    border: 4px solid #000000;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* NAV */
+
+.main-nav{
+    width: 100%;
+    background-color: #FFC107;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.main-nav .main-nav-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-nav .main-nav-list .item{
+    box-sizing: border-box;
+    color: #fff;
+    float: left;
+    width: 11%;
+}
+
+.main-nav .main-nav-list .item a{
+    color: #000000;
+}
+
+.main-nav .main-nav-list .item a:hover{
+    color: #00838F;
+    font-weight: bold;
+}
+
+/* BANNER */  
+
+.main-banner{
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+    padding-top: 10px;
+    height: 350px;
+    width: 100%;
+    
+    
+}
+
+.main-banner .main-banner-carousel{
+    float: left;
+    width: 100%;
+}
+
+/* NEWS */
+.main-news{
+    width: 100%;
+    height: 540px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-news h2{ 
+    color: #00838F;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.main-news .main-news-list{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.main-news .main-news-list a{
+    color: #000;
+}
+
+.main-news .main-news-list a .item{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.main-news .main-news-list a .item:hover{
+    opacity: 1;
+    border: 1px solid #e6e6e6;
+}
+
+.main-news .main-news-list a .item figure{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.main-news .main-news-list a .item figure img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.main-news .main-news-list a .item h3{
+    margin-bottom: 5px;    
+}
+
+.main-news .main-news-list a .item p{
+    margin-bottom: 5px;
+}
+
+.main-news .main-news-list a .item p span{
+    font-weight: bold;
+    color: red;
+}
+
+/* MAIS VENDIDOS */
+.main-most-sold{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 550px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-most-sold h2{ 
+    color: #00838F;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-most-sold .main-most-sold-list{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.main-most-sold .main-most-sold-list a{
+    color: #000;
+}
+
+.main-most-sold .main-most-sold-list a .item{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.main-most-sold .main-most-sold-list a .item:hover{
+    opacity: 1;
+    border: 1px solid #ffffff;
+}
+
+.main-most-sold .main-most-sold-list a .item figure{
+    width: 100%;
+}
+
+.main-most-sold .main-most-sold-list a .item figure img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.main-most-sold .main-most-sold-list a .item h3{
+    margin-bottom: 5px;    
+}
+
+.main-most-sold .main-most-sold-list a .item p{
+    margin-bottom: 5px;
+}
+
+.main-most-sold .main-most-sold-list a .item p span{
+    font-weight: bold;
+    color: red;
+}
+
+/* MAIN BOTTOM */
+.main-bottom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-bottom .main-bottom-divide{
+    float: left;
+    width: 33.3%;
+}
+
+.main-bottom .main-bottom-divide h4{
+    font-size: 25px;
+}
+
+.main-bottom div ul{
+    list-style-type: none;
+}
+
+.main-bottom div ul li{
+    width: 100%;
+    padding: 10px 10px 10px 0;
+}
+
+.main-bottom div ul li a{
+    color: #00838F;
+}
+
+.main-bottom div ul li a:hover{
+    color: #000000;
+}
+
+.main-bottom .main-bottom-divide form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.main-bottom .main-bottom-divide input[type="email"]{
+    width: 100%;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    padding: 10px;   
+}
+
+.main-bottom .main-bottom-divide p{
+    font-size: 25px;
+}
+
+.main-bottom .main-bottom-divide .main-bottom-social{
+
+}
+
+.main-bottom .main-bottom-divide .main-bottom-social li{
+
+}
+
+.main-bottom .main-bottom-divide .main-bottom-social li a{
+    
+}
+
+.main-bottom .main-bottom-divide .main-bottom-social li a figure{
+    float: left;
+    margin-right: 20px;
+}
+
+.main-bottom .main-bottom-divide .main-bottom-social li a figure img{
+    width: 80%;
+}
+
+/* FOOTER */
+.main-footer{
+    background: #00838F;
+    box-sizing: border-box;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    margin-top: 40px;
+}
+
+
+/*carrousel*/
+
+
+
